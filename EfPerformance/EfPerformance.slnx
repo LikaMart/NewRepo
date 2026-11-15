@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PerfLab/PerfLab.csproj" />
+  <Project Path="ProductsApi/ProductsApi.csproj" />
+</Solution>

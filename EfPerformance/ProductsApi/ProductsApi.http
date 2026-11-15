@@ -1,0 +1,19 @@
+@host = http://localhost:5298
+
+### ოპტიმიზებული
+GET {{host}}/products?page=1&size=20
+
+### ძებნა (Name ინდექსი)
+GET {{host}}/products?page=1&size=20&search=Product 9999
+
+### keyset
+GET {{host}}/products/keyset?lastId=99900&size=20
+
+### ოპტიმიზაციამდე (შედარებისთვის)
+GET {{host}}/products/naive?page=1&size=20
+
+### კატეგორიები (ქეში)
+GET {{host}}/categories
+
+### სახელის შეცვლა + ქეშის გასუფთავება
+PUT {{host}}/categories/2?name=Books
