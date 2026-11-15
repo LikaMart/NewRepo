@@ -2,7 +2,6 @@
 CREATE DATABASE LibraryDemoDb;
 GO
 USE LibraryDemoDb;
-GO
 CREATE TABLE Authors (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     FullName NVARCHAR(100) NOT NULL,

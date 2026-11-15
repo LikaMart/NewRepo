@@ -1,5 +1,4 @@
 USE CinemaDb;
-GO
 CREATE TABLE Halls (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Name NVARCHAR(50) NOT NULL UNIQUE,
@@ -8,7 +7,6 @@ CREATE TABLE Halls (
 INSERT INTO Halls (Name, Seats)
 VALUES (N'დიდი დარბაზი', 200),
        (N'VIP დარბაზი', 40);
-GO
 ALTER TABLE Sessions ADD HallId INT NULL;
 GO
 UPDATE Sessions SET HallId = 1 WHERE Id IN (1, 3, 5);
